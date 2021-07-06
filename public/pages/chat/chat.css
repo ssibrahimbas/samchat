@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  place-items: center;
+  background-color: #ebebeb;
+}
+.container {
+  border: 8px solid #dddddd;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.message-header {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  padding: 8px 16px;
+  color: #7e7e7e;
+  background-color: #ebebeb;
+}
+
+.message-header > small {
+  color: #bbb;
+}
+
+.receiver-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #7e7e7e;
+  flex-grow: 1;
+  border: none;
+  margin: 0 12px;
+  padding: 0.1rem 0;
+  margin-left: 4.3rem;
+  outline: none;
+  background-color: #ebebeb;
+  position: relative;
+}
+.receiver-name img {
+  position: absolute;
+  left: -15%;
+  top: -12%;
+  border-radius: 100%;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  width: 500px;
+  height: 600px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.message-left,
+.message-right {
+  list-style: none;
+  padding: 8px 12px;
+  margin: 0.3rem 1rem;
+  max-width: 250px;
+  font-size: 18px;
+  word-wrap: break-word;
+}
+.message-left:first-child,
+.message-right:first-child {
+  margin: 1rem;
+}
+
+.message-left {
+  border-radius: 20px 20px 20px 0;
+  align-self: flex-start;
+  background-color: #fff;
+  box-shadow: -2px 2px 4px #dcdcdc;
+}
+
+.message-right {
+  border-radius: 20px 20px 0 20px;
+  align-self: flex-end;
+  background-color: #2d2d2d;
+  box-shadow: 2px 2px 4px #dcdcdc;
+  color: #f6f6f6;
+}
+
+.message-left > small,
+.message-right > small {
+  display: block;
+  font-style: italic;
+  font-size: 11px;
+  margin-top: 4px;
+}
+.message-right > small {
+  text-align: right;
+}
+.feedback {
+  font-style: italic;
+  font-size: 0.7rem;
+  color: #2d2d2d;
+  margin-left: 4.5rem;
+}
+
+.message-form {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+.form-control {
+  flex-grow: 1;
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  background-color: #fff;
+}
+
+.btn-send {
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  padding: 0 20px;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.y-divider {
+  height: 48px;
+  width: 2px;
+  background-color: #f6f6f6;
+}
+
+
+.waiting {
+  display: none;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Bölümü</title>
+    <link rel="stylesheet" href="/chat.css" />
+    <link rel="stylesheet" href="/Alertify.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="message-header">
+        <div class="receiver-name">
+          <img
+            src="/images/defalut.jpg"
+            width="50"
+            height="50"
+            id="profile-image"
+          />
+          <span id="receiver-name">Anonymous</span>
+        </div>
+        <div class="message-feedback" id="message-feedback">
+          <p class="feedback" id="feedback"></p>
+        </div>
+      </div>
+      <div class="message-container" id="message-container"></div>
+      <form class="message-form" id="message-form">
+        <input
+          type="text"
+          name="message"
+          id="message-input"
+          class="form-control"
+          placeholder="Bir mesaj yazınız"
+        />
+        <div class="y-divider"></div>
+        <button type="submit" class="btn btn-send">Gönder</button>
+      </form>
+    </div>
+
+    <div id="alertify"></div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/Alertify.js"></script>
+    <script src="/Storage.js"></script>
+    <script src="/Request.js"></script>
+    <script src="/operation.js"></script>
+    <script src="/base.js"></script>
+    <script src="/ui.js"></script>
+    <script src="/socket.js"></script>
+  </body>
+</html>

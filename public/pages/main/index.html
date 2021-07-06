@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="log-form">
+        <div class="log-in">
+            <form id="login-form">
+                <h3 class="text-center">Mesajlaşma Uygulaması</h3>
+                <div class="form-group">
+                    <label for="email">E-posta</label>
+                    <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            class="form-control"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="password">Şifre</label>
+                    <input
+                            type="password"
+                            name="password"
+                            id="password"
+                            class="form-control"
+                    />
+                </div>
+                <button type="submit" class="btn btn-block">Giriş Yap</button>
+            </form>
+        </div>
+        <div class="x-divider"></div>
+        <div class="register-group">
+            <p class="text-center"><span>Hesabın yok mu?</span></p>
+            <a href="/auth/register"
+            >
+                <button class="btn btn-block">Kayıt ol</button>
+            </a
+            >
+        </div>
+    </div>
+</div>
+<script src="/Storage.js"></script>
+<script src="/Request.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>

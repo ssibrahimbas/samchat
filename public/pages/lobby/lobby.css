@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  margin: 1rem auto;
+  max-width: 90%;
+}
+.text-center {
+    text-align: center;
+}
+.persons {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+.card {
+
+    width: 33%;
+}
+.card-top, .card-fill, .card-action {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.card-top {
+    position: relative;
+}
+.card-fill {
+    flex-direction: column;
+    margin: 1.2rem 0;
+}
+.card-fill span {
+    margin: 0.3rem 0;
+}
+
+
+.btn {
+    padding: 0.5rem 0.8rem;
+    border-radius: 9.7px;
+    letter-spacing: 0.8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.btn-block {
+    width: 100%;
+}
+#edit-form-div {
+    position: absolute;
+    left: 0; 
+    top: 0;
+    bottom: 0;
+    right: 0; 
+    margin: auto auto;
+    width: 30%;
+    height: 30%;
+    border-radius: 10rem;
+    background-color:rgba(75, 0, 130, 0.8);
+    z-index: 2;
+}
+#edit-form-div .edit-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:200px;
+    margin: auto 0;
+}
+
+#edit-form-div .form-group {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+ input[type="file" i] {
+    color: white;
+} 
+input::-webkit-file-upload-button {
+    background-color: #ebebeb;
+    color: black;
+    padding: 1rem;
+    outline: none;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+
+#edit-form-div .form-action {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.img-online {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 3%;
+    right: 30%;
+    background-color: lightgreen;
+    border-radius: 100%;
+}

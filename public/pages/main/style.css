@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 4rem auto;
+  max-width: 50%;
+}
+.log-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid #000;
+  border-radius: 30px;
+}
+.log-in,
+.log-in #login-form {
+  width: 100%;
+}
+.register-group {
+  width: 100%;
+}
+.x-divider {
+  margin: 1rem 0;
+  width: 80%;
+  height: 1px;
+  background-color: #000;
+}
+.log-form .btn {
+  padding: 1rem 0.5rem;
+  margin: 1rem 0;
+}
+
+/* Forms */
+.form-group {
+  padding: 1rem 0;
+}
+label {
+  padding: 0.3rem 0;
+}
+.form-group label {
+  display: block;
+}
+textarea {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.form-control {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  resize: vertical;
+  outline: none;
+  border: 1px solid #000;
+}
+.btn {
+  padding: 0.5rem 0.8rem;
+  border-radius: 9.7px;
+  letter-spacing: 0.8px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.btn-block {
+  width: 100%;
+}
+.btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+}
+.btn-success {
+  color: #fff;
+  background-color: #218838;
+}
+.text-center {
+  text-align: center;
+}

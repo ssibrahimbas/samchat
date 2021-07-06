@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lobi</title>
+    <link rel="stylesheet" href="/lobby.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+      <link rel="stylesheet" href="/Alertify.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Kullanıcı Listesi</h1>
+      <div class="persons" id="persons"></div>
+    </div>
+    <div class="container-md">
+        <div id="edit-form-div" style="display: none">
+            <form class="edit-form" id="edit-form" >
+                <div class="form-group">
+                    <input type="file" name="profile_image" id="profile_image" class="form-control" />
+                </div>
+                <div class="form-action">
+                    <button class="btn btn-edit"type="submit" id='btn-edit-submit'>Kaydet</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="alertify"></div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/Alertify.js"></script>
+    
+    <script src="/Storage.js"></script>
+    <script src="/Request.js"></script>
+    <script src="/lobby.js"></script>
+    <script src="/events.js"></script>
+  </body>
+</html>
